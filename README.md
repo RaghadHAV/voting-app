@@ -1,9 +1,9 @@
-#Getting Started with Create React App
+# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-#Practicing Redux
-This is quick demstration for using redux for managing the states in react. 
+# Practicing Redux
+This is quick demonstration for using redux for managing the states in react. 
 
 
 ## Available Scripts
