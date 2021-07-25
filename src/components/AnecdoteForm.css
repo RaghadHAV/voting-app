@@ -1,0 +1,25 @@
+*{
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.voteClass{
+    color:rgb(218, 160, 13);
+    text-align: center;
+    margin-top: 30px;
+}
+
+.votingCreate{
+    text-align: center;
+    margin: 20px;
+}
+.liEmelemt{
+    padding: 5px;
+}
+#voteBtn{
+    margin: 5px;
+}
+.voteID{
+    display: inline;
+    border: 3px solid rgb(218, 160, 13);
+    padding: 5px;
+}
