@@ -25,7 +25,6 @@ const AnecdoteList = () => {
     let noteToShow = anecdotes;
     if(filteredNotes !== '') noteToShow = filteredNotes; // only where onchange clicked(filter note) then show the result of the filtration
 
-    
     return (
         <ul>
             {noteToShow.map(singleAnecdote =>

@@ -16,14 +16,13 @@ const anecdoteReducer = (state = [], action) => {
     case 'create': {
       state = [...state, action.data];
       state.sort((a, b) => b.votes - a.votes);
-      return state;;
+      return state;
     }
-    case 'init-note':
-      return action.data;
+    case 'init-note': 
+      return action.data.sort((a, b) => b.votes - a.votes);
     case 'msg': {
       state = [...state, action.noti];
-
-      return state;;
+      return state;
     }
   }
   return state
@@ -57,7 +56,7 @@ export const vote = (sentObj) => {
 export const initializeNotes = () => {
   return async dispatch => {
     const notes = await noteService.getAll()
-    dispatch({
+    dispatch({ 
       type: 'init-note',
       data: notes,
     })

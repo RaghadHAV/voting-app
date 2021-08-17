@@ -7,7 +7,7 @@
     },
     {
       "id": "21149",
-      "votes": 6,
+      "votes": 16,
       "content": "Adding manpower to a late software project makes it later!"
     },
     {
@@ -22,7 +22,7 @@
     },
     {
       "id": "25170",
-      "votes": 0,
+      "votes": 15,
       "content": "Premature optimization is the root of all evil."
     },
     {
@@ -39,6 +39,16 @@
       "content": "fff",
       "votes": 0,
       "id": "2357"
+    },
+    {
+      "content": "raghad new note ",
+      "votes": 0,
+      "id": "77055"
+    },
+    {
+      "content": "test ",
+      "votes": 0,
+      "id": "82094"
     }
   ]
 }
