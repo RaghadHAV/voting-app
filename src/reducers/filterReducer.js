@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 //const filterReducer1 =  useSelector(state => state.anecdot);
 const filterReducer = (state= '', action) => {
 
-  console.log('filter called')
+  //console.log('filter called')
   switch (action.type) {
     case 'filter': {
       console.log('inside the reducer', action.data)

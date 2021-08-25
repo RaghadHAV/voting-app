@@ -1,10 +1,10 @@
 import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
 import { vote } from '../reducers/anecdoteReducer'
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './AnecdoteForm.css'
 import { showMsg } from '../reducers/notificationReducer'
+import { connect } from 'react-redux'
 
 
 const Note = ({ note, handleClick }) => {
@@ -17,13 +17,10 @@ const Note = ({ note, handleClick }) => {
 
     )
 }
-const AnecdoteList = () => {
-    const dispatch = useDispatch()
-    const  anecdotes = useSelector(state => state.anecdot)
-    const filteredNotes = useSelector(state => state.filteredNotes)
-    
-    let noteToShow = anecdotes;
-    if(filteredNotes !== '') noteToShow = filteredNotes; // only where onchange clicked(filter note) then show the result of the filtration
+const AnecdoteList = (props) => {
+    let noteToShow = props.anecdot;//anecdotes;
+    //console.log('noteToShow', noteToShow)
+    if (props.filteredNotes !== '') noteToShow = props.filteredNotes; // only where onchange clicked(filter note) then show the result of the filtration
 
     return (
         <ul>
@@ -31,12 +28,8 @@ const AnecdoteList = () => {
                 <Note key={singleAnecdote.id}
                     note={singleAnecdote}
                     handleClick={() => {
-                        dispatch(vote(singleAnecdote))
-                        console.log('hey')
-                        dispatch(showMsg(`You Voted for Blog: ${singleAnecdote.content}`));
-                        setTimeout(function () {
-                            dispatch(showMsg(``));
-                        }, 5000);
+                        props.vote(singleAnecdote);
+                        props.showMsg(`You Voted for Blog: ${singleAnecdote.content}`);
                     }
                     }
                 />
@@ -44,5 +37,20 @@ const AnecdoteList = () => {
         </ul>
     )
 }
+const mapStateToProps = (state) => {
+    return {
+        anecdot: state.anecdot,
+        filteredNotes: state.filteredNotes,
+        msg: state.notofication
+    }
+}
 
-export default AnecdoteList
+const mapDispatchToProps = {
+    showMsg,
+    vote
+}
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(AnecdoteList)

@@ -2,12 +2,12 @@
   "anecdotes": [
     {
       "id": "47145",
-      "votes": 2,
+      "votes": 16,
       "content": "If it hurts, do it more often"
     },
     {
       "id": "21149",
-      "votes": 16,
+      "votes": 84,
       "content": "Adding manpower to a late software project makes it later!"
     },
     {
@@ -16,13 +16,13 @@
       "votes": 0
     },
     {
-      "content": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
       "id": "36975",
-      "votes": 0
+      "votes": 6,
+      "content": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand."
     },
     {
       "id": "25170",
-      "votes": 15,
+      "votes": 434,
       "content": "Premature optimization is the root of all evil."
     },
     {
@@ -31,24 +31,49 @@
       "votes": 0
     },
     {
-      "content": "dddd",
-      "votes": 0,
-      "id": "92790"
+      "id": "46307",
+      "votes": 1,
+      "content": "new note with connecgt"
     },
     {
-      "content": "fff",
-      "votes": 0,
-      "id": "2357"
+      "id": "46184",
+      "votes": 1,
+      "content": "d"
     },
     {
-      "content": "raghad new note ",
+      "content": "sss",
       "votes": 0,
-      "id": "77055"
+      "id": "92015"
     },
     {
-      "content": "test ",
+      "content": "new nte wirth commnect",
       "votes": 0,
-      "id": "82094"
+      "id": "74249"
+    },
+    {
+      "content": "sss",
+      "votes": 0,
+      "id": "18675"
+    },
+    {
+      "content": "ee",
+      "votes": 0,
+      "id": "92341"
+    },
+    {
+      "content": "ssss",
+      "votes": 0,
+      "id": "74032"
+    },
+    {
+      "content": "sssda",
+      "votes": 0,
+      "id": "49859"
+    },
+    {
+      "content": "swerwr",
+      "votes": 0,
+      "id": "1257"
     }
   ]
 }

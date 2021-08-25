@@ -22,7 +22,6 @@ const App = () => {
       <FilterBlog />
       <AnecdoteForm />
       <AnecdoteList />
-      {/* <Usemap/> */}
     </div>
   )
 }
